@@ -16,15 +16,15 @@ fn image_crop(path: &str) -> String {
     let img = image::open(path).unwrap();
 
     // The dimensions method returns the images width and height.
-    println!("dimensions {:?}", img.dimensions());
+    // println!("dimensions {:?}", img.dimensions());
 
     // The color method returns the image's `ColorType`.
-    println!("{:?}", img.color());
+    // println!("{:?}", img.color());
 
     // Write the contents of this image to the Writer in PNG format.
     img.save("test.png").unwrap();
 
-    format!("Hello, {}!", name)
+    format!("Hello! 001")
 }
 
 fn main() {
